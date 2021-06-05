@@ -7,6 +7,11 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  line-height: 2rem;
+}
+
+a {
+  color: $green;
 }
 
 #app {
@@ -38,7 +43,7 @@ body {
     padding: 1rem;
     background: none;
     color: $green;
-    border: 1px solid $green;
+    border: 3px solid $green;
     border-radius: 1rem;
     -moz-appearance: textfield;
     -webkit-appearance: none;
@@ -49,20 +54,17 @@ body {
   padding: 2rem;
   padding-top: 3rem;
   font-size: larger;
-  h1 {
-    font-size: 5rem;
-    font-weight: bold;
-    margin: 1rem;
-    color: $green-lighter;
+  img {
     padding-bottom: 1rem;
   }
   p {
     font-size: 1.5rem;
+    font-weight: 500;
   }
 }
 
 .footer {
-  height: 100px;
+  height: 150px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -79,10 +81,6 @@ body {
     color: $grey;
   }
 
-  a {
-    color: $green;
-  }
-
   nav {
     display: flex;
     flex-direction: row;
@@ -90,8 +88,15 @@ body {
   }
 }
 
+.inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .slider-container {
-  border: 1px solid black;
+  // border: 1px solid black;
   margin: 1rem;
   padding: 1rem;
   width: 80%;
@@ -115,6 +120,12 @@ body {
   }
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
 * {
   .-bold {
     font-weight: bolder;
@@ -131,6 +142,6 @@ body {
   .-hr {
     border: 1px solid $grey-lighter;
     width: 70vw;
-    border-radius: 1rem;
+    // border-radius: 1rem;
   }
 }

@@ -10,7 +10,7 @@ let sqrtOutput = document.getElementById("sqrtOutput");
 
 // Initializations
 numberInput.value = 67;
-slider.value = 4;
+slider.value = 40;
 Big.DP = Number(slider.value);
 precisionOutput.innerHTML = generatePrecisionString(slider.value); // Display the default slider value
 outputResult();
