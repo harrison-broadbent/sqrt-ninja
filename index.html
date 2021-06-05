@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sqrt Ninja - Arbitrary Precision Square Root Calculator</title>
     <script src="https://cdn.jsdelivr.net/npm/big.js@6.0.0/big.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="app">
-      <h1>Sqrt Ninja</h1>
+      <div class="heading">
+        <h1>Sqrt Ninja</h1>
+        <p>Calculate square roots to an arbitrary number of decimal places.</p>
+        <p>Type in a number and adjust the precision below.</p>
+      </div>
       <input id="numberInput" type="number" />
-      <div class="slidecontainer">
+      <div class="slider-container">
         <input
           type="range"
           min="1"
@@ -19,13 +28,25 @@
           class="slider"
           id="precisionRange"
         />
+        <div id="precisionOutput"></div>
       </div>
-      <div id="precisionOutput"></div>
 
-      <div class="outputContainer">
-        <p class="-bold">Result:</p>
+      <div class="output-container">
+        <p class="-p-right -p-bottom -bold">Result:</p>
         <p id="sqrtOutput"></p>
       </div>
+    </div>
+    <div class="footer">
+      <div class="-hr"></div>
+      <nav>
+        <a href="https://www.github.com/harrison-broadbent/sqrt-ninja"
+          >source</a
+        >
+      </nav>
+      <p>
+        with luv,
+        <a href="https://www.twitter.com/hrrsnbbnt">@hrrsnbbnt</a>
+      </p>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
