@@ -32,6 +32,7 @@ body {
   }
 
   input[type="number"] {
+    width: 80%;
     font-size: 2rem;
     font-weight: bold;
     padding: 1rem;
@@ -45,9 +46,9 @@ body {
 }
 
 .heading {
-  padding: 4rem;
+  padding: 2rem;
+  padding-top: 3rem;
   font-size: larger;
-  line-height: 2rem;
   h1 {
     font-size: 5rem;
     font-weight: bold;
@@ -93,6 +94,10 @@ body {
   border: 1px solid black;
   margin: 1rem;
   padding: 1rem;
+  width: 80%;
+  input {
+    width: 80%;
+  }
 }
 
 .output-container {
@@ -101,8 +106,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70vw;
-  margin: 1rem;
+  width: 80vw;
+  // margin: 1rem;
 
   #sqrtOutput {
     max-width: 100%;
