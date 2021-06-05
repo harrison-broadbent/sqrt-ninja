@@ -1,0 +1,31 @@
+@import "./colors";
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.outputContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 70%;
+
+  #sqrtOutput {
+    max-width: 70%;
+    word-wrap: break-word;
+  }
+}
+
+* {
+  .-bold {
+    font-weight: bolder;
+  }
+}

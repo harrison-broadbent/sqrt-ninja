@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sqrt Ninja - Arbitrary Precision Square Root Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/big.js@6.0.0/big.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Sqrt Ninja</h1>
+      <input id="numberInput" type="number" />
+      <div class="slidecontainer">
+        <input
+          type="range"
+          min="1"
+          max="1000"
+          class="slider"
+          id="precisionRange"
+        />
+      </div>
+      <div id="precisionOutput"></div>
+
+      <div class="outputContainer">
+        <p class="-bold">Result:</p>
+        <p id="sqrtOutput"></p>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
